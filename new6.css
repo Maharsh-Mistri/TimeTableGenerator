@@ -1,0 +1,268 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f5f7fa;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h1,
+h2,
+h3 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.input-section {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+select,
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+#add-course {
+  background-color: #2ecc71;
+  margin-top: 15px;
+}
+
+#add-course:hover {
+  background-color: #27ae60;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+#save-config {
+  background-color: #9b59b6;
+}
+
+#save-config:hover {
+  background-color: #8e44ad;
+}
+
+#load-config {
+  background-color: #e67e22;
+}
+
+#load-config:hover {
+  background-color: #d35400;
+}
+
+#generate-btn {
+  flex-grow: 1;
+  font-weight: bold;
+}
+
+.course-item {
+  background: white;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.course-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.remove-course {
+  background-color: #e74c3c;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+.remove-course:hover {
+  background-color: #c0392b;
+}
+
+.view-options {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.view-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.view-buttons button {
+  flex: 1;
+  min-width: 120px;
+}
+
+.view-buttons button.active {
+  background-color: #2c3e50;
+}
+
+.filter-options {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.filter-options select {
+  min-width: 150px;
+}
+
+.timetable-container {
+  overflow-x: auto;
+}
+
+.timetable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.timetable th,
+.timetable td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+
+.timetable th {
+  background-color: #2c3e50;
+  color: white;
+}
+
+.time-slot {
+  background-color: #f8f9fa;
+  font-weight: bold;
+}
+
+.lecture {
+  background-color: #d5f5e3;
+}
+
+.lab {
+  background-color: #fdebd0;
+}
+
+.tutorial {
+  background-color: #d6eaf8;
+}
+
+.day-header {
+  background-color: #3498db;
+  color: white;
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 20px 0;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.legend-color {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+}
+
+.empty-slot {
+  background-color: #f8f9fa;
+}
+
+.course-code {
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+.course-faculty {
+  font-size: 0.8em;
+  color: #555;
+}
+
+.course-type {
+  font-size: 0.8em;
+  font-style: italic;
+}
+
+#export-pdf {
+  background-color: #e74c3c;
+  margin-top: 20px;
+}
+
+#export-pdf:hover {
+  background-color: #c0392b;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  .timetable th,
+  .timetable td {
+    padding: 6px;
+    font-size: 12px;
+  }
+
+  .button-group,
+  .view-buttons {
+    flex-direction: column;
+  }
+}
